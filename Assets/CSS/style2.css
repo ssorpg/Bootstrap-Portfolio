@@ -1,15 +1,27 @@
+html, body {
+  height: 100%;
+}
 body {
     background-image: url("../Images/body_background.png");
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    overflow-y: scroll;
     color: #777777;
+}
+#wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -60px;
 }
 .navbar {
     padding: 0;
     border-bottom: solid #cccccc 2px;
 }
-.container {
-    width: 80%;
-    padding: 0;
+.navbar-expand {
+    flex-flow: row wrap;
+}
+.navbar-brand {
+    margin: 0;
 }
 #myname {
     background-color: #4aaaa5;
@@ -18,18 +30,41 @@ body {
     font-size: 32px;
     font-weight: bold;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
+    margin-left: 2%;
+}
+#navbarNav {
+    margin-right: 2%;
+}
+@media only screen and (max-width: 575px) {
+    #myname {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+    #navbarNav {
+        margin: auto;
+        text-align: center;
+        padding: 12px 0 12px;
+    }
+}
+.font-18px {
+    font-size: 18px;
 }
 .navdivider {
     height: 18px;
-    margin: 12px 0 12px 0;
+    margin: 12px 2px 12px 2px;
     width: 0.5px;
     border-right: solid #cccccc 0.5px;
+}
+#main {
+    margin: 2%;
 }
 #content {
     box-sizing: border-box;
     padding: 20px;
     background-color: #ffffff;
-    margin-top: 3%;
+    border: solid #dddddd 1px;
 }
 h2 {
     color: #4aaaa5;
@@ -41,12 +76,42 @@ h2 {
     margin: 24px auto 18px auto;
     border: solid #cccccc 1px;
 }
-#profilepicture {
+img {
     width: 100%;
-    float: left;
-    padding-top: 10px;
 }
-div > p {
+#profilepicture {
+    padding: 10px 0 10px;
+}
+#bio {
     margin: 0;
     line-height: 2em;
+}
+.margin-bottom {
+    margin-bottom: calc( 3% + 10px );
+}
+.portfolioimagetext {
+    position: absolute;
+    bottom: calc( 10px + 1% );
+    left: 15px; /* Offsets the left side 15px margin in bootstrap */
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 20px;
+    width: calc( 100% - 30px ); /* Offsets both side 15px margins in bootstrap */
+    background-color: #4aaaa5;
+    text-align: center;
+    color: #ffffff;
+}
+#footer, #footerfix {
+    height: 60px;
+}
+#footer {
+    margin: 0;
+    border-top: solid #4aaaa5 8px;
+    background-color: #666666;
+    color: #ffffff;
+}
+#copyright {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
 }
