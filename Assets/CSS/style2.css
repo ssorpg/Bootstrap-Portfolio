@@ -1,0 +1,52 @@
+body {
+    background-image: url("../Images/body_background.png");
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+.navbar {
+    padding: 0;
+    border-bottom: solid #cccccc 2px;
+}
+.container {
+    width: 80%;
+    padding: 0;
+}
+#myname {
+    background-color: #4aaaa5;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+.navdivider {
+    height: 18px;
+    margin: 12px 0 12px 0;
+    width: 0.5px;
+    border-right: solid #cccccc 0.5px;
+}
+#content {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-top: 3%;
+}
+h2 {
+    color: #4aaaa5;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+#maindivider {
+    margin: 24px auto 18px auto;
+    border: solid #cccccc 1px;
+}
+#profilepicture {
+    width: 100%;
+    float: left;
+    padding-top: 10px;
+}
+div > p {
+    margin: 0;
+    line-height: 2em;
+}
