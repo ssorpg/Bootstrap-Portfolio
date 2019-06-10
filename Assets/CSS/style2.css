@@ -101,6 +101,42 @@ img {
     text-align: center;
     color: #ffffff;
 }
+h4 {
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+.inputtext, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: solid #cccccc 1px;
+    line-height: 1.2em;
+    padding: 10px;
+    font-family: inherit;
+    color: inherit;
+    font-size: 14px;
+}
+.inputtext {
+    margin-bottom: 12px;
+}
+textarea {
+    resize: vertical;
+    margin: 0 0 18px 0;
+    min-height: 150px;
+    max-height: 300px;
+}
+#inputsubmit {
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    padding: 10px 30px 12px 30px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    border: none;
+}
+#inputsubmit:hover {
+    background-color: #FFA500;
+    transition: 0.1s;
+}
 #footer, #footerfix {
     height: 60px;
 }
