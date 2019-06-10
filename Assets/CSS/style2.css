@@ -23,7 +23,7 @@ body {
 .navbar-brand {
     margin: 0;
 }
-#myname {
+#my-name {
     background-color: #4aaaa5;
     padding: 20px;
     color: #ffffff;
@@ -35,8 +35,8 @@ body {
 #navbarNav {
     margin-right: 2%;
 }
-@media only screen and (max-width: 575px) {
-    #myname {
+@media only screen and ( max-width: 575px ) { /* Could not figure out a reasonable solution to this that did not include an inordinate amount of code and/or JS */
+    #my-name {
         margin: 0;
         width: 100%;
         text-align: center;
@@ -51,7 +51,7 @@ body {
 .font-18px {
     font-size: 18px;
 }
-.navdivider {
+.nav-divider {
     height: 18px;
     margin: 12px 2px 12px 2px;
     width: 0.5px;
@@ -72,14 +72,14 @@ h2 {
     font-weight: bold;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
-#maindivider {
+#main-divider {
     margin: 24px auto 18px auto;
     border: solid #cccccc 1px;
 }
 img {
     width: 100%;
 }
-#profilepicture {
+#profile-picture {
     padding: 10px 0 10px;
 }
 #bio {
@@ -89,9 +89,9 @@ img {
 .margin-bottom {
     margin-bottom: calc( 3% + 10px );
 }
-.portfolioimagetext {
+.portfolio-image-text {
     position: absolute;
-    bottom: calc( 10px + 1% );
+    bottom: calc( 1% + 10px );
     left: 15px; /* Offsets the left side 15px margin in bootstrap */
     padding-top: 3%;
     padding-bottom: 3%;
@@ -105,7 +105,7 @@ h4 {
     margin-bottom: 8px;
     font-weight: normal;
 }
-.inputtext, textarea {
+.input-text, textarea {
     width: 100%;
     box-sizing: border-box;
     border: solid #cccccc 1px;
@@ -115,7 +115,7 @@ h4 {
     color: inherit;
     font-size: 14px;
 }
-.inputtext {
+.input-text {
     margin-bottom: 12px;
 }
 textarea {
@@ -124,7 +124,7 @@ textarea {
     min-height: 150px;
     max-height: 300px;
 }
-#inputsubmit {
+#input-submit {
     text-align: center;
     display: block;
     font-size: 18px;
@@ -133,11 +133,11 @@ textarea {
     color: #ffffff;
     border: none;
 }
-#inputsubmit:hover {
+#input-submit:hover {
     background-color: #FFA500;
     transition: 0.1s;
 }
-#footer, #footerfix {
+#footer, #footer-fix {
     height: 60px;
 }
 #footer {
